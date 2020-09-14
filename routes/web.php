@@ -14,5 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/contacts');
 });
+
+
+Route::namespace('App\Http\Controllers')->group(function() {
+    Route::get('/contacts', "ContactController@index");
+    Route::get('/contacts/signup', "ContactController@signup");
+    Route::get('/contacts/{id}', "ContactController@show");
+    Route::get('/contacts/{id}/edit', "ContactController@edit");
+
+    Route::put('/contacts/{id}', "ContactController@update");
+    Route::post('/contacts', "ContactController@create");
+    Route::delete('/contacts/{id}', "ContactController@delete");
+});
+
+
