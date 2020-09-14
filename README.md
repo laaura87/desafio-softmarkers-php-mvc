@@ -53,6 +53,10 @@ php artisan serve
 
 Development server will be running in the [http://localhost:8000](http://localhost:8000)
 
+## Desafios/problemas encontrados durante a realização do projeto
+
+  Esse projeto foi muito desafiador, pois nunca tinha visto PHP antes, tive que estudar para poder realiza-lo. Acabei realizando como API Rest, pois considero melhor visualização do código e mais fácil de fazer integração com outras plataformas, front, back end e até mesmo mobile. Mas quando fui fazer um double-check antes de enviar os links para o e-mail, acabei percebendo que o desafio pedia modelo MVC, então acabei refazendo o projeto com MVC mais rápido possível.
+    
 ## License
 
 This project is MIT licensed.
